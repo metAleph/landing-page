@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	    <meta name="description" content="metAleph official webpage">
+	    <meta name="author" content="Daniel Llatas Spiers">
+	    <link rel="icon" href="logo.ico" type="image/icon"/>
+
+
+	    <title>metAleph</title>
+
+	    <!-- Bootstrap core CSS -->
+	    <link rel="stylesheet" href="bundle.css" />
+	</head>
+
+  	<body>
+	    <!-- Begin page content -->
+	    <div class="container">
+			<div class="page-header hb-page-header-home text-center"></div>
+			<div class="page-header hb-page-header-about text-center"></div>
+			<div class="page-header hb-page-header-project text-center"></div>
+			<div class="page-header hb-page-header-team text-center"></div>
+		</div>
+		<footer class="footer hb-footer"></footer>
+	    <script src="bundle.js"></script>
+  	</body>
+</html>
+
+<script id="page-header-home" type="text/x-handlebars-template">
+	<h1 class="css-page-header-home-title">{{title}}</h1>
+	<p class="lead css-page-header-home-content">{{content}}</p>
+</script>
+
+<script id="page-header-about" type="text/x-handlebars-template">
+	<h1 class="css-page-header-title">{{title}}</h1>
+	<p class="lead css-page-header-content">{{content}}</p>
+</script>
+
+<script id="page-header-project" type="text/x-handlebars-template">
+	<h1 class="css-page-header-title">{{title}}</h1>
+	<p class="lead css-page-header-content"><a href={{link}} target="_blank">{{content}}</a></p>
+</script>
+
+<script id="page-header-team" type="text/x-handlebars-template">
+	<h1 class="css-page-header-title">{{title}}</h1>
+	<p class="lead css-page-header-content">{{content}}</p>
+</script>
+
+<script id="footer" type="text/x-handlebars-template">
+	<div class="container">
+		<p class="text-muted"> &copy; {{content}} </p>
+	</div>
+</script>
