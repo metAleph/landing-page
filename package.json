@@ -1,0 +1,36 @@
+{
+  "name": "metaleph.com",
+  "version": "1.0.0",
+  "description": "official webpage for metaleph",
+  "main": "index.js",
+  "bin": {
+    "metaleph.com": "bundle.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metAleph/metaleph.com.git"
+  },
+  "keywords": [
+    "metaleph",
+    "webpage"
+  ],
+  "author": "daniel llatas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/metAleph/metaleph.com/issues"
+  },
+  "homepage": "https://github.com/metAleph/metaleph.com#readme",
+  "dependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-react": "^6.16.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.2"
+  }
+}

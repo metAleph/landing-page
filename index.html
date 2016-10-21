@@ -4,53 +4,19 @@
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	    <meta name="description" content="metAleph official webpage">
 	    <meta name="author" content="Daniel Llatas Spiers">
-	    <link rel="icon" href="logo.ico" type="image/icon"/>
 	    <title>metAleph</title>
-	    <!-- Bootstrap core CSS -->
-	    <link rel="stylesheet" href="bundle.css" />
+	    <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	    <link rel="stylesheet" href="./src/css/main.css" />
 	</head>
-
   	<body>
-	    <!-- Begin page content -->
-	    <div class="container">
-			<div class="page-header hb-page-header-home text-center"></div>
-			<div class="page-header hb-page-header-about text-center"></div>
-			<div class="page-header hb-page-header-project text-center"></div>
-			<div class="page-header hb-page-header-team text-center"></div>
-		</div>
-		<footer class="footer hb-footer"></footer>
-	    <script src="bundle.min.js"></script>
+	    <div id="app" class="container"></div>
+		<script src="./bin/app.bundle.js"></script>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   	</body>
 </html>
-
-<script id="page-header-home" type="text/x-handlebars-template">
-	<h1 class="css-page-header-home-title">{{title}}</h1>
-	<p class="lead css-page-header-home-content">{{content}}</p>
-</script>
-
-<script id="page-header-about" type="text/x-handlebars-template">
-	<h1 class="css-page-header-title">{{title}}</h1>
-	<p class="lead css-page-header-content">{{content}}</p>
-	<p class="lead css-page-header-content">{{content3}}</p>
-	<p class="lead css-page-header-content">{{content2}}</p>
-</script>
-
-<script id="page-header-project" type="text/x-handlebars-template">
-	<h1 class="css-page-header-title">{{title}}</h1>
-	<p class="lead css-page-header-content"><a href={{link}} target="_blank">{{content}}</a></p>
-</script>
-
-<script id="page-header-team" type="text/x-handlebars-template">
-	<h1 class="css-page-header-title">{{title}}</h1>
-	<p class="lead css-page-header-content">{{author1}}</p>
-	<p class="lead css-page-header-content">{{author2}}</p>
-</script>
-
-<script id="footer" type="text/x-handlebars-template">
-	<div class="container">
-		<p class="text-muted"> &copy; {{content}} </p>
-	</div>
-</script>

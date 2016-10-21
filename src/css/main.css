@@ -16,18 +16,14 @@ body {
     padding: 0 15px;
 }
 
-.page-header {
-	border-bottom-color: black;
-}
-
-.css-page-header-home-title {
+.header-title {
     color: black;
     font-family: 'Indie Flower', cursive;
     font-weight: bold;
     font-size: 1000%;
 }
 
-.css-page-header-home-content {
+.header-subtitle {
     color: black;
     font-family: 'Indie Flower', cursive;
     font-weight: normal;
@@ -35,13 +31,13 @@ body {
     margin-top: 5%;
 }
 
-.css-page-header-title {
+.section-title {
     font-family: 'Indie Flower', cursive;
     font-weight: bold;
     font-size: 350%;
 }
 
-.css-page-header-content {
+.section-content {
     color: black;
     font-family: 'Indie Flower', cursive;
     font-weight: normal;
