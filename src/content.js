@@ -16,7 +16,8 @@ export const data = {
 }
 
 export const style = {
-    headerTitle:      "header-title text-center"
+    sectionHeader: "section-header"
+    , headerTitle:      "header-title text-center"
     , headerSubtitle: "lead header-subtitle text-center"
     , section:        "section-title text-center"
     , sectionContent: "lead section-content text-center"

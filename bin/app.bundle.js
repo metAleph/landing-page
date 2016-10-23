@@ -21438,7 +21438,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	exports.App = exports.About = undefined;
+	exports.App = exports.Team = exports.Project = exports.About = exports.Header = undefined;
 
 	var _react = __webpack_require__(1);
 
@@ -21447,10 +21447,10 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 	/* Header */
-	var Header = function Header(props) {
+	var Header = exports.Header = function Header(props) {
 	    return _react2["default"].createElement(
 	        "section",
-	        null,
+	        { className: props.sectionStyle },
 	        _react2["default"].createElement(
 	            "h1",
 	            { className: props.titleStyle },
@@ -21482,7 +21482,7 @@
 	    );
 	};
 	/* Project */
-	var Project = function Project(props) {
+	var Project = exports.Project = function Project(props) {
 	    return _react2["default"].createElement(
 	        "section",
 	        null,
@@ -21505,7 +21505,7 @@
 	    );
 	};
 	/* Team */
-	var Team = function Team(props) {
+	var Team = exports.Team = function Team(props) {
 	    return _react2["default"].createElement(
 	        "section",
 	        null,
@@ -21549,14 +21549,27 @@
 	    return _react2["default"].createElement(
 	        "section",
 	        null,
-	        _react2["default"].createElement(Header, { titleStyle: props.styleClass.headerTitle, title: props.data.headerTitle,
+	        _react2["default"].createElement(Header, { sectionStyle: props.styleClass.sectionHeader, titleStyle: props.styleClass.headerTitle, title: props.data.headerTitle,
 	            subtitleStyle: props.styleClass.headerSubtitle, subtitle: props.data.headerSubtitle }),
 	        _react2["default"].createElement(About, { titleStyle: props.styleClass.section, contentStyle: props.styleClass.sectionContent,
 	            title: props.data.aboutTitle, content: props.data.about }),
-	        _react2["default"].createElement(Project, { titleStyle: props.styleClass.section, contentStyle: props.styleClass.sectionContent,
-	            title: props.data.projectTitle, content: props.data.project }),
-	        _react2["default"].createElement(Team, { titleStyle: props.styleClass.section, contentStyle: props.styleClass.sectionContent,
-	            title: props.data.teamTitle, content: props.data.team })
+	        _react2["default"].createElement(
+	            "div",
+	            { className: "row" },
+	            _react2["default"].createElement(
+	                "div",
+	                { className: "col-md-6" },
+	                _react2["default"].createElement(Project, { titleStyle: props.styleClass.section,
+	                    contentStyle: props.styleClass.sectionContent,
+	                    title: props.data.projectTitle, content: props.data.project })
+	            ),
+	            _react2["default"].createElement(
+	                "div",
+	                { className: "col-md-6" },
+	                _react2["default"].createElement(Team, { titleStyle: props.styleClass.section, contentStyle: props.styleClass.sectionContent,
+	                    title: props.data.teamTitle, content: props.data.team })
+	            )
+	        )
 	    );
 	};
 
@@ -21582,6 +21595,7 @@
 	};
 
 	var style = exports.style = {
+	    sectionHeader: "section-header",
 	    headerTitle: "header-title text-center",
 	    headerSubtitle: "lead header-subtitle text-center",
 	    section: "section-title text-center",

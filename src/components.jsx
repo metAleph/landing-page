@@ -2,7 +2,7 @@ import React from 'react';
 
 /* Header */
 export const Header = (props) => (
-    <section>
+    <section className={props.sectionStyle}>
         <h1 className={props.titleStyle}>{props.title}</h1>
         <p className={props.subtitleStyle}>{props.subtitle}</p>
     </section>
@@ -49,13 +49,20 @@ const Footer = (props) => (
 /* App */
 export const App = (props) => (
     <section>
-        <Header titleStyle={props.styleClass.headerTitle} title={props.data.headerTitle}
+        <Header sectionStyle={props.styleClass.sectionHeader} titleStyle={props.styleClass.headerTitle} title={props.data.headerTitle}
             subtitleStyle={props.styleClass.headerSubtitle} subtitle={props.data.headerSubtitle} />
         <About titleStyle={props.styleClass.section} contentStyle={props.styleClass.sectionContent}
             title={props.data.aboutTitle} content={props.data.about} />
-        <Project titleStyle={props.styleClass.section} contentStyle={props.styleClass.sectionContent}
-            title={props.data.projectTitle} content={props.data.project} />
-        <Team titleStyle={props.styleClass.section} contentStyle={props.styleClass.sectionContent}
-            title={props.data.teamTitle} content={props.data.team} />
+        <div className="row">
+            <div className="col-md-6">
+                <Project titleStyle={props.styleClass.section}
+                    contentStyle={props.styleClass.sectionContent}
+                    title={props.data.projectTitle} content={props.data.project} />
+            </div>
+            <div className="col-md-6">
+                <Team titleStyle={props.styleClass.section} contentStyle={props.styleClass.sectionContent}
+                    title={props.data.teamTitle} content={props.data.team} />
+            </div>
+        </div>
     </section>
 )
