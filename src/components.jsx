@@ -1,7 +1,7 @@
 import React from 'react';
 
 /* Header */
-const Header = (props) => (
+export const Header = (props) => (
     <section>
         <h1 className={props.titleStyle}>{props.title}</h1>
         <p className={props.subtitleStyle}>{props.subtitle}</p>
@@ -9,14 +9,14 @@ const Header = (props) => (
 )
 
 /* About */
-const About = (props) => (
+export const About = (props) => (
     <section>
         <h1 className={props.titleStyle}>{props.title}</h1>
         <p className={props.contentStyle}>{props.content}</p>
     </section>
 )
 /* Project */
-const Project = (props) => (
+export const Project = (props) => (
     <section>
         <h1 className={props.titleStyle}>{props.title}</h1>
         {
@@ -27,7 +27,7 @@ const Project = (props) => (
     </section>
 )
 /* Team */
-const Team = (props) => (
+export const Team = (props) => (
     <section>
         <h1 className={props.titleStyle}>{props.title}</h1>
         {
@@ -59,6 +59,3 @@ export const App = (props) => (
             title={props.data.teamTitle} content={props.data.team} />
     </section>
 )
-
-/*<Footer sectionStyle={props.styleClass.footer} contentStyle={props.styleClass.footerContent}
-        content={props.data.footer} />*/

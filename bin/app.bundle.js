@@ -58,9 +58,9 @@
 
 	var _content = __webpack_require__(173);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	_reactDom2.default.render(_react2.default.createElement(_components.App, { data: _content.data, styleClass: _content.style }), document.getElementById('app'));
+	_reactDom2['default'].render(_react2['default'].createElement(_components.App, { data: _content.data, styleClass: _content.style }), document.getElementById('app'));
 
 /***/ },
 /* 1 */
@@ -21438,25 +21438,25 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	exports.App = undefined;
+	exports.App = exports.About = undefined;
 
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 	/* Header */
 	var Header = function Header(props) {
-	    return _react2.default.createElement(
+	    return _react2["default"].createElement(
 	        "section",
 	        null,
-	        _react2.default.createElement(
+	        _react2["default"].createElement(
 	            "h1",
 	            { className: props.titleStyle },
 	            props.title
 	        ),
-	        _react2.default.createElement(
+	        _react2["default"].createElement(
 	            "p",
 	            { className: props.subtitleStyle },
 	            props.subtitle
@@ -21465,16 +21465,16 @@
 	};
 
 	/* About */
-	var About = function About(props) {
-	    return _react2.default.createElement(
+	var About = exports.About = function About(props) {
+	    return _react2["default"].createElement(
 	        "section",
 	        null,
-	        _react2.default.createElement(
+	        _react2["default"].createElement(
 	            "h1",
 	            { className: props.titleStyle },
 	            props.title
 	        ),
-	        _react2.default.createElement(
+	        _react2["default"].createElement(
 	            "p",
 	            { className: props.contentStyle },
 	            props.content
@@ -21483,19 +21483,19 @@
 	};
 	/* Project */
 	var Project = function Project(props) {
-	    return _react2.default.createElement(
+	    return _react2["default"].createElement(
 	        "section",
 	        null,
-	        _react2.default.createElement(
+	        _react2["default"].createElement(
 	            "h1",
 	            { className: props.titleStyle },
 	            props.title
 	        ),
 	        props.content.map(function (project) {
-	            return _react2.default.createElement(
+	            return _react2["default"].createElement(
 	                "p",
 	                { key: project.key, className: props.contentStyle },
-	                _react2.default.createElement(
+	                _react2["default"].createElement(
 	                    "a",
 	                    { href: project.url, target: "_blank" },
 	                    project.name
@@ -21506,16 +21506,16 @@
 	};
 	/* Team */
 	var Team = function Team(props) {
-	    return _react2.default.createElement(
+	    return _react2["default"].createElement(
 	        "section",
 	        null,
-	        _react2.default.createElement(
+	        _react2["default"].createElement(
 	            "h1",
 	            { className: props.titleStyle },
 	            props.title
 	        ),
 	        props.content.map(function (member) {
-	            return _react2.default.createElement(
+	            return _react2["default"].createElement(
 	                "p",
 	                { key: member.key, className: props.contentStyle },
 	                member.member,
@@ -21530,13 +21530,13 @@
 	};
 	/* Footer */
 	var Footer = function Footer(props) {
-	    return _react2.default.createElement(
+	    return _react2["default"].createElement(
 	        "footer",
 	        { className: props.sectionStyle },
-	        _react2.default.createElement(
+	        _react2["default"].createElement(
 	            "div",
 	            null,
-	            _react2.default.createElement(
+	            _react2["default"].createElement(
 	                "p",
 	                { className: props.contentStyle },
 	                props.content
@@ -21546,22 +21546,19 @@
 	};
 	/* App */
 	var App = exports.App = function App(props) {
-	    return _react2.default.createElement(
+	    return _react2["default"].createElement(
 	        "section",
 	        null,
-	        _react2.default.createElement(Header, { titleStyle: props.styleClass.headerTitle, title: props.data.headerTitle,
+	        _react2["default"].createElement(Header, { titleStyle: props.styleClass.headerTitle, title: props.data.headerTitle,
 	            subtitleStyle: props.styleClass.headerSubtitle, subtitle: props.data.headerSubtitle }),
-	        _react2.default.createElement(About, { titleStyle: props.styleClass.section, contentStyle: props.styleClass.sectionContent,
+	        _react2["default"].createElement(About, { titleStyle: props.styleClass.section, contentStyle: props.styleClass.sectionContent,
 	            title: props.data.aboutTitle, content: props.data.about }),
-	        _react2.default.createElement(Project, { titleStyle: props.styleClass.section, contentStyle: props.styleClass.sectionContent,
+	        _react2["default"].createElement(Project, { titleStyle: props.styleClass.section, contentStyle: props.styleClass.sectionContent,
 	            title: props.data.projectTitle, content: props.data.project }),
-	        _react2.default.createElement(Team, { titleStyle: props.styleClass.section, contentStyle: props.styleClass.sectionContent,
+	        _react2["default"].createElement(Team, { titleStyle: props.styleClass.section, contentStyle: props.styleClass.sectionContent,
 	            title: props.data.teamTitle, content: props.data.team })
 	    );
 	};
-
-	/*<Footer sectionStyle={props.styleClass.footer} contentStyle={props.styleClass.footerContent}
-	        content={props.data.footer} />*/
 
 /***/ },
 /* 173 */
